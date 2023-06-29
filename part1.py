@@ -7,7 +7,7 @@ class Player:
         self.game_w = game_w
         self.game_l = game_l
 
-
+# wtf is this
 
 
 
