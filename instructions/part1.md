@@ -18,15 +18,17 @@ In part 1, you will be creating rock-paper-scissor game. The game will consist o
 #### Fields
 - `player1` - A `Player` class
 - `player2` - A `Player` class
+- `num_games` - The number of games being played
 - `games` - A array of `Game` class
 - `stats` - A `SimStats` class
 
 #### Required Funcions
-`__init__(self)`
+`__init__(self, player1, player2, num_games)`
 - initializes the class with an empty array for `self.games` and `None` in the `self.stats` field.
+- initialize the other `self.player1`, `self.player2`, and `self.num_games` with the values passed in
 
-`run_simulation(self, num_games, player1, player2, bet_amt)`
-- use a for loop to run `n` (num_games) games.
+`run_simulation(self, player1, player2, bet_amt)`
+- use a for loop to run `n` (`self.num_games`) games.
   - for each game, create a new `Game` class, and call the `play_game` function to run a new game
   - at the end of each game:
     - add the `Game` to the array of `self.games` 
